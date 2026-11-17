@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./img/icon/android-chrome-192x192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Babylon.js App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #renderCanvas {
+            display: block;
+            width: 100dvw;
+            height: 100dvh;
+            touch-action: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="renderCanvas"></canvas>
+
+    <header id="top-bar">
+        Digital Replica
+    </header>
+
+    <div id="info-panel">
+
+        <div class="panel-header">
+            Room Information
+        </div>
+
+        <div class="panel-content">
+
+            <div class="info-row">
+                <span class="label">Room Name</span>
+                <span id="room-name" class="value">
+                    Select a room
+                </span>
+            </div>
+
+            <div class="info-row">
+                <span class="label">Room Type</span>
+                <span id="room-type" class="pill">
+                    -
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="/src/index.ts"></script>
+
+</body>
+
+</html>
